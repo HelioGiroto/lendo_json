@@ -1,4 +1,4 @@
-let DADOS = null; // variável global
+let DADOS; // variável global
 
 async function carregarDados() {
   try {
@@ -15,7 +15,7 @@ async function carregarDados() {
 }
 
 function exibirDadosNaTela() {
-  const div = document.getElementById("conteudo");
+  const div = document.querySelector("#conteudo");
 
   div.innerHTML = `
     <strong>Nome:</strong> ${DADOS.nome}<br>
